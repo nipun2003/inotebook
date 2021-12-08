@@ -23,7 +23,7 @@ class UserController {
             console.error(error.message)
             response = {
                 'error': true,
-                'message': 'Internal server error'
+                'message': error.message
             };
         }
         return response;
@@ -130,7 +130,7 @@ class UserController {
             console.error(error.message)
             response = {
                 'error': true,
-                'message': 'Internal server error'
+                'message': error.message
             };
         }
         return response;
@@ -158,7 +158,7 @@ class UserController {
             console.error(error.message)
             response = {
                 'error': true,
-                'message': 'Internal server error'
+                'message': error.message
             };
         }
         return response;
@@ -176,7 +176,7 @@ class UserController {
             console.error(error.message)
             return {
                 'error': true,
-                'message': 'Internal server error'
+                'message': error.message
             };
         }
     }
